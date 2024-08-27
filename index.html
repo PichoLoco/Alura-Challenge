@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="assets/Logo.png" alt="Logo Aula" class="logo">
+        </div>
+    </header>
+    <main class="presentacion">
+        <section class="cajaTexto">
+            <textarea placeholder="Ingrese el texto aqui" id="valorIngreso"></textarea>
+            <div class="contenedor_advertencia">
+                <img class="icono_advertencia" src="assets/bi_exclamation-circle-fill.png" alt="icono de advertencia">
+                <h1 class="texto_advertencia">Solo en minusculuas y sin acentos, ni caracteres especiales.</h1>
+            </div>
+            <div class="contener_boton">
+                <button onclick="encriptar()"; class="boton_encriptar">Encriptar</button>
+                <button onclick="desencriptar()"; class="boton_desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="verTexto">
+            <img src="assets/Muñeco.png" alt="Imagen mensaje no encontrado" id="valorImagen">
+            <textarea placeholder="Ningun mensaje fue encontrado. Ingresa el texto que deseas encriptar o desencriptar" id="valorRespuesta" disabled></textarea>
+        <div class="copiar">
+            <button onclick="copiarTexto()"; class="botonCopiar">Copiar</button>
+        </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Yojhan Racines</p>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>
